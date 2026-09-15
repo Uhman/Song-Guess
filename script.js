@@ -24,6 +24,22 @@ const SONGS = {
 	title: "Inselfieber",
     audio: "songs/day-2026-09-16.mp3"
   },
+  "2026-09-17": {
+	title: "Gimme! Gimme! Gimme!",
+    audio: "songs/day-2026-09-17.mp3"
+  },
+  "2026-09-18": {
+	title: "Scream & Shout",
+    audio: "songs/day-2026-09-18.mp3"
+  },
+  "2026-09-19": {
+	title: "Tanzneid",
+    audio: "songs/day-2026-09-19.mp3"
+  },
+  "2026-09-20": {
+	title: "Augenbling",
+    audio: "songs/day-2026-09-20.mp3"
+  },
   //
   // Add your real songs here.
 };
