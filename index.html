@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070a12">
+  <title>Daily Song Riddle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">♪</span>
+        <div>
+          <div class="eyebrow">DAILY SONG RIDDLE</div>
+          <h1>SONG//GUESS</h1>
+        </div>
+      </div>
+      <div class="status-pill"><span class="status-dot"></span><span id="todayLabel">LOADING</span></div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="kicker">ONE SONG. ONE DAY. UNLIMITED TRIES.</p>
+          <h2>Can you identify<br><span>today's track?</span></h2>
+          <p class="subcopy">Press play. Listen closely. Enter the song title. No hints. No pressure.</p>
+        </div>
+
+        <div class="player-card">
+          <div class="player-top">
+            <div class="signal">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <span id="playerStatus">READY</span>
+          </div>
+          <audio id="audioPlayer" preload="metadata" controls></audio>
+          <div class="player-meta">
+            <span id="trackDate">TODAY'S TRANSMISSION</span>
+            <span id="attemptLabel">0 ATTEMPTS</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="game-grid">
+        <div class="guess-panel">
+          <div class="section-label">IDENTIFY TRACK</div>
+          <form id="guessForm" autocomplete="off">
+            <div class="input-wrap">
+              <input id="guessInput" type="text" placeholder="Enter song title..." aria-label="Song title" maxlength="120">
+              <button type="submit">GUESS <span>↵</span></button>
+            </div>
+          </form>
+          <div id="message" class="message" aria-live="polite"></div>
+          <div class="tries-note">UNLIMITED ATTEMPTS · TITLE ONLY · NO HINTS</div>
+        </div>
+
+        <div class="calendar-panel">
+          <div class="calendar-head">
+            <div>
+              <div class="section-label">MISSION LOG</div>
+              <h3 id="monthTitle">SEPTEMBER — NOVEMBER</h3>
+            </div>
+            <div class="legend">
+              <span><i class="available"></i>OPEN</span>
+              <span><i class="done"></i>DONE</span>
+              <span><i class="skipped"></i>OFF</span>
+            </div>
+          </div>
+          <div id="calendar" class="calendar"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>SONG//GUESS</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
