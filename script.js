@@ -11,7 +11,9 @@ const START_DATE = "2026-09-15";
 const END_DATE   = "2026-11-03";
 
 const SKIPPED_DATES = [
-  // "2026-09-21",
+  "2026-09-20",
+  "2026-09-26",
+  "2026-09-27",
   // "2026-10-05",
 ];
 
@@ -36,9 +38,33 @@ const SONGS = {
 	title: "Tanzneid",
     audio: "songs/day-2026-09-19.mp3"
   },
-  "2026-09-20": {
+  "2026-09-21": {
+	title: "Mambo No. 5",
+    audio: "songs/day-2026-09-21.mp3"
+  },
+  "2026-09-22": {
+	title: "Rolling in the Deep",
+    audio: "songs/day-2026-09-22.mp3"
+  },
+  "2026-09-23": {
 	title: "Augenbling",
-    audio: "songs/day-2026-09-20.mp3"
+    audio: "songs/day-2026-09-23.mp3"
+  },
+  "2026-09-24": {
+	title: "Senorita",
+    audio: "songs/day-2026-09-24.mp3"
+  },
+  "2026-09-25": {
+	title: "Cup of Life",
+    audio: "songs/day-2026-09-25.mp3"
+  },
+  "2026-09-28": {
+	title: "Sexy and I know it",
+    audio: "songs/day-2026-09-28.mp3"
+  },
+  "2026-09-29": {
+	title: "Stayin' Alive",
+    audio: "songs/day-2026-09-29.mp3"
   },
   //
   // Add your real songs here.
