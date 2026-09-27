@@ -14,7 +14,8 @@ const SKIPPED_DATES = [
   "2026-09-20",
   "2026-09-26",
   "2026-09-27",
-  // "2026-10-05",
+  "2026-10-03",
+  "2026-10-04",
 ];
 
 const SONGS = {
@@ -66,8 +67,33 @@ const SONGS = {
 	title: "Stayin' Alive",
     audio: "songs/day-2026-09-29.mp3"
   },
+  "2026-09-30": {
+	title: "3 x KO",
+    audio: "songs/day-2026-09-30.mp3"
+  },
+  "2026-10-01": {
+	title: "Baby one more time",
+    audio: "songs/day-2026-10-01.mp3"
+  },
+  "2026-10-02": {
+	title: "Mehr Waffen",
+    audio: "songs/day-2026-10-02.mp3"
+  },
+  "2026-10-05": {
+	title: "Since u been gone",
+    audio: "songs/day-2026-10-05.mp3"
+  },
+  "2026-10-06": {
+	title: "Army of the Night",
+    audio: "songs/day-2026-10-06.mp3"
+  },
+  "2026-10-07": {
+	title: "Jim Beam & Voddi",
+    audio: "songs/day-2026-10-07.mp3"
+  },
   //
   // Add your real songs here.
+  
 };
 
 const STORAGE_KEY = "songGuessProgress";
