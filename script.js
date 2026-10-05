@@ -16,6 +16,10 @@ const SKIPPED_DATES = [
   "2026-09-27",
   "2026-10-03",
   "2026-10-04",
+  "2026-10-10",
+  "2026-10-11",
+  "2026-10-17",
+  "2026-10-18",
 ];
 
 const SONGS = {
@@ -90,6 +94,39 @@ const SONGS = {
   "2026-10-07": {
 	title: "Jim Beam & Voddi",
     audio: "songs/day-2026-10-07.mp3"
+  },
+  "2026-10-08": {
+	title: "Links Rechts",
+    audio: "songs/day-2026-10-08.mp3"
+  },
+  "2026-10-09": {
+	title: "Hall of Fame",
+    audio: "songs/day-2026-10-09.mp3"
+  },
+  "2026-10-12": {
+	title: "Schnappi, das kleine Krokodil",
+    audio: "songs/day-2026-10-12.mp3"
+  },
+  "2026-10-14": {
+	title: "American Idiot",
+    audio: "songs/day-2026-10-13.mp3"
+  },
+  "2026-10-14": {
+	title: "Legends never die",
+    audio: "songs/day-2026-10-14.mp3"
+  },
+  "2026-10-15": {
+	title: "Chop Suey!",
+    audio: "songs/day-2026-10-15.mp3"
+  },
+  "2026-10-16": {
+	title: "Inselbande",
+    audio: "songs/day-2026-10-16.mp3"
+  },
+  
+  "2026-10-20": {
+	title: "Mit dir schlafen",
+    audio: "songs/day-2026-10-16.mp3"
   },
   //
   // Add your real songs here.
