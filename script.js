@@ -107,7 +107,7 @@ const SONGS = {
 	title: "Schnappi, das kleine Krokodil",
     audio: "songs/day-2026-10-12.mp3"
   },
-  "2026-10-14": {
+  "2026-10-13": {
 	title: "American Idiot",
     audio: "songs/day-2026-10-13.mp3"
   },
