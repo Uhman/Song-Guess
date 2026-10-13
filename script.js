@@ -20,6 +20,8 @@ const SKIPPED_DATES = [
   "2026-10-11",
   "2026-10-17",
   "2026-10-18",
+  "2026-10-24",
+  "2026-10-25",
 ];
 
 const SONGS = {
@@ -123,10 +125,41 @@ const SONGS = {
 	title: "Inselbande",
     audio: "songs/day-2026-10-16.mp3"
   },
-  
+  "2026-10-19": {
+	title: "Ich hab Polizei",
+    audio: "songs/day-2026-10-19.mp3"
+  },
   "2026-10-20": {
 	title: "Mit dir schlafen",
-    audio: "songs/day-2026-10-16.mp3"
+    audio: "songs/day-2026-10-20.mp3"
+  },
+  "2026-10-21": {
+	title: "Dirty little secret",
+    audio: "songs/day-2026-10-21.mp3"
+  },
+  "2026-10-22": {
+	title: "How it is",
+    audio: "songs/day-2026-10-22.mp3"
+  },
+  "2026-10-23": {
+	title: "Junge",
+    audio: "songs/day-2026-10-23.mp3"
+  },
+  "2026-10-26": {
+	title: "Schüsse in die Luft",
+    audio: "songs/day-2026-10-26.mp3"
+  },
+  "2026-10-27": {
+	title: "Ohne dich",
+    audio: "songs/day-2026-10-27.mp3"
+  },
+  "2026-10-28": {
+	title: "Hawaiian Roller Coaster Ride",
+    audio: "songs/day-2026-10-28.mp3"
+  },
+  "2026-10-29": {
+	title: "Schwarz",
+    audio: "songs/day-2026-10-29.mp3"
   },
   //
   // Add your real songs here.
