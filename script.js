@@ -8,7 +8,7 @@
 */
 
 const START_DATE = "2026-09-15";
-const END_DATE   = "2026-11-03";
+const END_DATE   = "2026-11-09";
 
 const SKIPPED_DATES = [
   "2026-09-20",
@@ -22,6 +22,10 @@ const SKIPPED_DATES = [
   "2026-10-18",
   "2026-10-24",
   "2026-10-25",
+  "2026-10-31",
+  "2026-11-01",
+  "2026-10-07",
+  "2026-11-08"
 ];
 
 const SONGS = {
@@ -161,6 +165,42 @@ const SONGS = {
 	title: "Schwarz",
     audio: "songs/day-2026-10-29.mp3"
   },
+  "2026-10-30": {
+	title: "Diego Maradona",
+    audio: "songs/day-2026-10-30.mp3"
+  },
+  "2026-11-02": {
+	title: "Keta und Krawall",
+    audio: "songs/day-2026-11-02.mp3"
+  },
+  "2026-11-03": {
+	title: "Rewrite the stars",
+    audio: "songs/day-2026-11-03.mp3"
+  },
+  "2026-11-04": {
+	title: "Chöre",
+    audio: "songs/day-2026-11-04.mp3"
+  },
+  "2026-11-05": {
+	title: "Ein bißchen Frieden",
+    audio: "songs/day-2026-11-05.mp3"
+  },
+  "2026-11-06": {
+	title: "Mama hat gesagt",
+    audio: "songs/day-2026-11-06.mp3"
+  },
+  "2026-11-09": {
+	title: "Halt dein Maul",
+    audio: "songs/day-2026-11-09.mp3"
+  },
+  "2026-11-09b": {
+	title: "Halt dein Maul",
+    audio: "songs/day-2026-11-09b.mp3"
+  },
+  "2026-11-09c": {
+	title: "Halt dein Maul",
+    audio: "songs/day-2026-11-09c.mp3"
+  },
   //
   // Add your real songs here.
   
@@ -170,6 +210,8 @@ const STORAGE_KEY = "songGuessProgress";
 
 const $ = (selector) => document.querySelector(selector);
 const audio = $("#audioPlayer");
+const audio2 = $("#audioPlayer2");
+const audio3 = $("#audioPlayer3");
 const guessForm = $("#guessForm");
 const guessInput = $("#guessInput");
 const message = $("#message");
@@ -299,7 +341,7 @@ function setupToday() {
   const inPeriod = isInGame(currentDate);
   const skipped = isSkipped(currentDate);
   const song = getSongFor(currentDate);
-
+  
   $("#todayLabel").textContent = formatDate(currentDate).toUpperCase();
   $("#trackDate").textContent = formatDate(currentDate, { weekday: "long", day: "numeric", month: "long" }).toUpperCase();
 
@@ -341,6 +383,18 @@ function setupToday() {
 
   audio.src = song.audio;
   audio.load();
+  
+  if (currentDate == END_DATE) {
+	audio2.style = 'visible';
+	const song2 = getSongFor(currentDate + "b");
+	audio2.src = song2.audio;
+	audio2.load()
+	audio3.style = 'visible';
+	const song3 = getSongFor(currentDate + "c");
+	audio3.src = song3.audio;
+	audio3.load()	  
+  }
+  
   guessInput.disabled = false;
   guessForm.querySelector("button").disabled = false;
 
